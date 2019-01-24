@@ -31,7 +31,7 @@
         [self.view addSubview:textField];
         textField;
     });
-    
+
     self.button = ({
         CGFloat width = 100;
         UIButton *button = [[UIButton alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - width) / 2, 200, width, 40)];
@@ -51,6 +51,12 @@
         [self.view addSubview:button];
         button;
     });
+    
+    [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerAction:) userInfo:nil repeats:true];
+}
+
+- (void)timerAction:(id)sender {
+    NSLog(@"\nLiujiajie: sender = %@", sender);
 }
 
 - (void)viewDidAppear:(BOOL)animated {
