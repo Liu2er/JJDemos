@@ -25,6 +25,7 @@
     NSData *imageData = [NSData dataWithContentsOfFile:path];
     CGImageSourceRef source = CGImageSourceCreateWithData((__bridge CFDataRef)imageData, NULL);
     CGImageRef imageRef = CGImageSourceCreateImageAtIndex(source, 0, NULL);
+    CFRelease(source);
     NSCParameterAssert(imageRef);
 
     CGFloat width = CGImageGetWidth(imageRef);
@@ -43,6 +44,7 @@
     CGContextRef contextRef = CGBitmapContextCreate(NULL, width, height, 8, 0, spaceRef, bitmapInfo);
     CGContextDrawImage(contextRef, CGRectMake(0, 0, width, height), imageRef);
     CGImageRef preImageRef = CGBitmapContextCreateImage(contextRef); //ImageIO_PNG_Data
+    CGContextRelease(contextRef);
     NSCParameterAssert(preImageRef);
     
     UIImage *decompressedImage = [UIImage imageWithCGImage:preImageRef scale:1 orientation:0];
