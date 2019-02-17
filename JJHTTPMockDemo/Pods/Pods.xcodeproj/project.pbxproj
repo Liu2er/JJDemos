@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067733F3A7BCFBBCBE1A44A5BB25FB92 /* GYHttpClientHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B0CADA15B83BBE2254823AE0844A7EE /* GYHttpClientHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		06D81E68CE4F1AC07DCD0322D7C29344 /* GYMockResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = 666A1CE200757CD2BA0261E76B5D6D86 /* GYMockResponse.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		181CCEF543F05469DA9A821127AB6E65 /* GYNSURLSessionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = F55D2C420FE2CE85C443B9A7229F8448 /* GYNSURLSessionHook.m */; };
+		28210BB724720D8A25805B8DB3D8AE3C /* GYMockURLProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 213A222B4843969B6AC55373C0CD97E8 /* GYMockURLProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		293E57EE51E5C3B606636EC756677525 /* GYMatcher.m in Sources */ = {isa = PBXBuildFile; fileRef = AFF90FCB37543331E92CD26249973E76 /* GYMatcher.m */; };
+		2A5B728C7AE99DDF8552B4AD692D6E0C /* GYNSURLConnectionHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 46D84E1278D4712756039948042E4147 /* GYNSURLConnectionHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2AA751B6557D08CEF3B821E3DB2C9F18 /* GYMockRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = A2C8AD769A23FC5EC1C36370A1BA71AF /* GYMockRequest.m */; };
+		39ECC272D34CE57761252F5960CC6679 /* GYMockResponseDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3977840947B07564C10D819CD92A1948 /* GYMockResponseDSL.m */; };
+		4CA39079CF0589FA93673AF1093A1863 /* GYHttpMock.m in Sources */ = {isa = PBXBuildFile; fileRef = 80DCE1565FAA11C422B28FED5FECBF75 /* GYHttpMock.m */; };
+		4D289B9C3F01794EEFCE9797B27A285F /* GYHttpMock.h in Headers */ = {isa = PBXBuildFile; fileRef = 2678F6FE1B8FCA44386B4EDD45A21398 /* GYHttpMock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		51A9C9A0CF9B3FC5121F06282E6C8394 /* GYMatcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 05295882191E71E70F99BBCE63CE1EAE /* GYMatcher.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6DBBBD662373BD44620E92356F0531C2 /* GYHttpMock-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C1D5785C6BD63AC6F83CE2A8772E3DCC /* GYHttpMock-dummy.m */; };
+		71A12A5995451AE5189BEBC93CB13B03 /* GYMockURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = BB525D64C888F7A1116D0ADA0337860E /* GYMockURLProtocol.m */; };
+		8518A4C98964C3E5FFC549D26A8E7177 /* GYNSURLConnectionHook.m in Sources */ = {isa = PBXBuildFile; fileRef = CB4D9F824F5033DAF432EEA9ED0A2375 /* GYNSURLConnectionHook.m */; };
+		9E13569863A99A2A74CAF9999D196A8B /* GYMockRequestDSL.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8AB947803E2ECFAACF7C492728E12F /* GYMockRequestDSL.m */; };
+		A0E35E6D68B6841537C8F870C84E463A /* GYMockRequest.h in Headers */ = {isa = PBXBuildFile; fileRef = 47D3974F699A3F3C8812E690E9B151FA /* GYMockRequest.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A5F49CE04CDCBF6627DABF8474C799D8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75B497488E3314801E4FB0C8009F9FDF /* CFNetwork.framework */; };
+		AA193821213D5A23D8088CB5F52E3015 /* NSString+mock.h in Headers */ = {isa = PBXBuildFile; fileRef = 30BF6D815946B5B42221C682A7DD920B /* NSString+mock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0B3E5D1F8C43E5F0BFECF42E68F55C7 /* GYMockResponseDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = D0821E792EF135A49DB903295A8D46ED /* GYMockResponseDSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BEC23EB6AB96F2EDF5A1D2D72ADB0441 /* NSURLRequest+GYURLRequestProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = D77383E1E3CA96CB23A7724B824B95AE /* NSURLRequest+GYURLRequestProtocol.m */; };
+		C056EE21F4BA44F134E9D1ADC5B2FEBA /* GYMockRequestDSL.h in Headers */ = {isa = PBXBuildFile; fileRef = 708CA1AFDC5BB4D5F25A0C8A8D396C26 /* GYMockRequestDSL.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2B922F57736ECCA061610DA3B840CA9 /* NSString+mock.m in Sources */ = {isa = PBXBuildFile; fileRef = C59223AA3289D0C4F5E8858D4AF1B09C /* NSString+mock.m */; };
+		C31E67D75D639C1CF7ADDC3E1467DCB3 /* NSURLRequest+GYURLRequestProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 46EC2FFAC5B7A7FC41F976D8BDCC5D31 /* NSURLRequest+GYURLRequestProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DC009D1C18AC750F6608EFC43AA3DDE5 /* GYNSURLSessionHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E9977BD7F56BFD26C3EE25B104CDF5D /* GYNSURLSessionHook.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DE08626D9A6376C1CA06CCA6E55812DB /* Pods-JJHTTPMockDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 61D6CB78111F6B425907D3D53FEB16CF /* Pods-JJHTTPMockDemo-dummy.m */; };
+		E398125D1E9397389576C59EFD4E5570 /* GYHttpClientHook.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BB9FA410AB6B53A773FD7A09CBABC74 /* GYHttpClientHook.m */; };
+		EAB29FD411725D958EF65346E3C21786 /* GYMockResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = F06B956DFA8B09ABFFF21F0492430B65 /* GYMockResponse.m */; };
+		F8FBAEFA95E7DBA26E3C92C5216B6F67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12CD98D2E1967A971DD60249C2BD0616 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D86BBAA3AC2637BEA66321959E9896CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CDBE180929D957E7D2F3F0C95089EA6;
+			remoteInfo = GYHttpMock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03F41D5B9B881DB534B98A6C4B2B400F /* Pods-JJHTTPMockDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJHTTPMockDemo-resources.sh"; sourceTree = "<group>"; };
+		05295882191E71E70F99BBCE63CE1EAE /* GYMatcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GYMatcher.h; sourceTree = "<group>"; };
+		12CD98D2E1967A971DD60249C2BD0616 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1ADD0A1BE1B40AD3F177963BD2679CBF /* Pods-JJHTTPMockDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JJHTTPMockDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		213A222B4843969B6AC55373C0CD97E8 /* GYMockURLProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GYMockURLProtocol.h; sourceTree = "<group>"; };
+		24390EFD555DD124430DFF9724065945 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2678F6FE1B8FCA44386B4EDD45A21398 /* GYHttpMock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = GYHttpMock.h; sourceTree = "<group>"; };
+		2E01EEF76C924EBA0ADD6E3627CE2AF7 /* libPods-JJHTTPMockDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-JJHTTPMockDemo.a"; path = "libPods-JJHTTPMockDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30BF6D815946B5B42221C682A7DD920B /* NSString+mock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+mock.h"; path = "Categories/NSString+mock.h"; sourceTree = "<group>"; };
+		3977840947B07564C10D819CD92A1948 /* GYMockResponseDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYMockResponseDSL.m; path = Response/GYMockResponseDSL.m; sourceTree = "<group>"; };
+		46D84E1278D4712756039948042E4147 /* GYNSURLConnectionHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYNSURLConnectionHook.h; path = Hooks/GYNSURLConnectionHook.h; sourceTree = "<group>"; };
+		46EC2FFAC5B7A7FC41F976D8BDCC5D31 /* NSURLRequest+GYURLRequestProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLRequest+GYURLRequestProtocol.h"; path = "Categories/NSURLRequest+GYURLRequestProtocol.h"; sourceTree = "<group>"; };
+		47D3974F699A3F3C8812E690E9B151FA /* GYMockRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYMockRequest.h; path = Request/GYMockRequest.h; sourceTree = "<group>"; };
+		4BB9FA410AB6B53A773FD7A09CBABC74 /* GYHttpClientHook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYHttpClientHook.m; path = Hooks/GYHttpClientHook.m; sourceTree = "<group>"; };
+		4F75FBFDD7658CB39B9F8E228287328D /* Pods-JJHTTPMockDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJHTTPMockDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5AE23E6947AB673E4B84254566360266 /* GYHttpMock.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = GYHttpMock.xcconfig; sourceTree = "<group>"; };
+		5B8AB947803E2ECFAACF7C492728E12F /* GYMockRequestDSL.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYMockRequestDSL.m; path = Request/GYMockRequestDSL.m; sourceTree = "<group>"; };
+		5E9977BD7F56BFD26C3EE25B104CDF5D /* GYNSURLSessionHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYNSURLSessionHook.h; path = Hooks/GYNSURLSessionHook.h; sourceTree = "<group>"; };
+		61D6CB78111F6B425907D3D53FEB16CF /* Pods-JJHTTPMockDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JJHTTPMockDemo-dummy.m"; sourceTree = "<group>"; };
+		666A1CE200757CD2BA0261E76B5D6D86 /* GYMockResponse.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYMockResponse.h; path = Response/GYMockResponse.h; sourceTree = "<group>"; };
+		708CA1AFDC5BB4D5F25A0C8A8D396C26 /* GYMockRequestDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYMockRequestDSL.h; path = Request/GYMockRequestDSL.h; sourceTree = "<group>"; };
+		75B497488E3314801E4FB0C8009F9FDF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
+		793C968BB7753DE1F56E164D93E64707 /* Pods-JJHTTPMockDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JJHTTPMockDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		80DCE1565FAA11C422B28FED5FECBF75 /* GYHttpMock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GYHttpMock.m; sourceTree = "<group>"; };
+		8F877BAE9C02BB01C92FCA9B1845F11A /* libGYHttpMock.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libGYHttpMock.a; path = libGYHttpMock.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9B0CADA15B83BBE2254823AE0844A7EE /* GYHttpClientHook.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYHttpClientHook.h; path = Hooks/GYHttpClientHook.h; sourceTree = "<group>"; };
+		A2C8AD769A23FC5EC1C36370A1BA71AF /* GYMockRequest.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYMockRequest.m; path = Request/GYMockRequest.m; sourceTree = "<group>"; };
+		AFF90FCB37543331E92CD26249973E76 /* GYMatcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GYMatcher.m; sourceTree = "<group>"; };
+		BB525D64C888F7A1116D0ADA0337860E /* GYMockURLProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = GYMockURLProtocol.m; sourceTree = "<group>"; };
+		BFAFB40ACAC64C619C4B45EEA57EC527 /* GYHttpMock-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "GYHttpMock-prefix.pch"; sourceTree = "<group>"; };
+		C1D5785C6BD63AC6F83CE2A8772E3DCC /* GYHttpMock-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "GYHttpMock-dummy.m"; sourceTree = "<group>"; };
+		C59223AA3289D0C4F5E8858D4AF1B09C /* NSString+mock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+mock.m"; path = "Categories/NSString+mock.m"; sourceTree = "<group>"; };
+		CB4D9F824F5033DAF432EEA9ED0A2375 /* GYNSURLConnectionHook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYNSURLConnectionHook.m; path = Hooks/GYNSURLConnectionHook.m; sourceTree = "<group>"; };
+		D0821E792EF135A49DB903295A8D46ED /* GYMockResponseDSL.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = GYMockResponseDSL.h; path = Response/GYMockResponseDSL.h; sourceTree = "<group>"; };
+		D613B075489F0411005DFE8E70924910 /* Pods-JJHTTPMockDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JJHTTPMockDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D77383E1E3CA96CB23A7724B824B95AE /* NSURLRequest+GYURLRequestProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURLRequest+GYURLRequestProtocol.m"; path = "Categories/NSURLRequest+GYURLRequestProtocol.m"; sourceTree = "<group>"; };
+		DA6E184A7AF7B9D7013A161F348F1441 /* Pods-JJHTTPMockDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JJHTTPMockDemo-frameworks.sh"; sourceTree = "<group>"; };
+		F06B956DFA8B09ABFFF21F0492430B65 /* GYMockResponse.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYMockResponse.m; path = Response/GYMockResponse.m; sourceTree = "<group>"; };
+		F55D2C420FE2CE85C443B9A7229F8448 /* GYNSURLSessionHook.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = GYNSURLSessionHook.m; path = Hooks/GYNSURLSessionHook.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		014246A2D6E9842BC9C54D694BF13B0F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F174053687FEA9CEF41179C207DC7D2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5F49CE04CDCBF6627DABF8474C799D8 /* CFNetwork.framework in Frameworks */,
+				F8FBAEFA95E7DBA26E3C92C5216B6F67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0259AC57CDF567679ADCB00BDEB114CF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				5AE23E6947AB673E4B84254566360266 /* GYHttpMock.xcconfig */,
+				C1D5785C6BD63AC6F83CE2A8772E3DCC /* GYHttpMock-dummy.m */,
+				BFAFB40ACAC64C619C4B45EEA57EC527 /* GYHttpMock-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/GYHttpMock";
+			sourceTree = "<group>";
+		};
+		02CDFDCE52C07084969C29CE55BE7BB8 /* Pods-JJHTTPMockDemo */ = {
+			isa = PBXGroup;
+			children = (
+				D613B075489F0411005DFE8E70924910 /* Pods-JJHTTPMockDemo-acknowledgements.markdown */,
+				1ADD0A1BE1B40AD3F177963BD2679CBF /* Pods-JJHTTPMockDemo-acknowledgements.plist */,
+				61D6CB78111F6B425907D3D53FEB16CF /* Pods-JJHTTPMockDemo-dummy.m */,
+				DA6E184A7AF7B9D7013A161F348F1441 /* Pods-JJHTTPMockDemo-frameworks.sh */,
+				03F41D5B9B881DB534B98A6C4B2B400F /* Pods-JJHTTPMockDemo-resources.sh */,
+				793C968BB7753DE1F56E164D93E64707 /* Pods-JJHTTPMockDemo.debug.xcconfig */,
+				4F75FBFDD7658CB39B9F8E228287328D /* Pods-JJHTTPMockDemo.release.xcconfig */,
+			);
+			name = "Pods-JJHTTPMockDemo";
+			path = "Target Support Files/Pods-JJHTTPMockDemo";
+			sourceTree = "<group>";
+		};
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EBC880584FE2DFF823BCC5863C234694 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3544EFC33ADA0F657737DEB4208B6690 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AB884E19E01654A0932746438031766A /* GYHttpMock */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		36232164F5C841F3E5C3ACB86812C02E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F877BAE9C02BB01C92FCA9B1845F11A /* libGYHttpMock.a */,
+				2E01EEF76C924EBA0ADD6E3627CE2AF7 /* libPods-JJHTTPMockDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		47A29EFAC181E15923665E50AFB572C6 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				02CDFDCE52C07084969C29CE55BE7BB8 /* Pods-JJHTTPMockDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		AB884E19E01654A0932746438031766A /* GYHttpMock */ = {
+			isa = PBXGroup;
+			children = (
+				9B0CADA15B83BBE2254823AE0844A7EE /* GYHttpClientHook.h */,
+				4BB9FA410AB6B53A773FD7A09CBABC74 /* GYHttpClientHook.m */,
+				2678F6FE1B8FCA44386B4EDD45A21398 /* GYHttpMock.h */,
+				80DCE1565FAA11C422B28FED5FECBF75 /* GYHttpMock.m */,
+				05295882191E71E70F99BBCE63CE1EAE /* GYMatcher.h */,
+				AFF90FCB37543331E92CD26249973E76 /* GYMatcher.m */,
+				47D3974F699A3F3C8812E690E9B151FA /* GYMockRequest.h */,
+				A2C8AD769A23FC5EC1C36370A1BA71AF /* GYMockRequest.m */,
+				708CA1AFDC5BB4D5F25A0C8A8D396C26 /* GYMockRequestDSL.h */,
+				5B8AB947803E2ECFAACF7C492728E12F /* GYMockRequestDSL.m */,
+				666A1CE200757CD2BA0261E76B5D6D86 /* GYMockResponse.h */,
+				F06B956DFA8B09ABFFF21F0492430B65 /* GYMockResponse.m */,
+				D0821E792EF135A49DB903295A8D46ED /* GYMockResponseDSL.h */,
+				3977840947B07564C10D819CD92A1948 /* GYMockResponseDSL.m */,
+				213A222B4843969B6AC55373C0CD97E8 /* GYMockURLProtocol.h */,
+				BB525D64C888F7A1116D0ADA0337860E /* GYMockURLProtocol.m */,
+				46D84E1278D4712756039948042E4147 /* GYNSURLConnectionHook.h */,
+				CB4D9F824F5033DAF432EEA9ED0A2375 /* GYNSURLConnectionHook.m */,
+				5E9977BD7F56BFD26C3EE25B104CDF5D /* GYNSURLSessionHook.h */,
+				F55D2C420FE2CE85C443B9A7229F8448 /* GYNSURLSessionHook.m */,
+				30BF6D815946B5B42221C682A7DD920B /* NSString+mock.h */,
+				C59223AA3289D0C4F5E8858D4AF1B09C /* NSString+mock.m */,
+				46EC2FFAC5B7A7FC41F976D8BDCC5D31 /* NSURLRequest+GYURLRequestProtocol.h */,
+				D77383E1E3CA96CB23A7724B824B95AE /* NSURLRequest+GYURLRequestProtocol.m */,
+				0259AC57CDF567679ADCB00BDEB114CF /* Support Files */,
+			);
+			name = GYHttpMock;
+			path = GYHttpMock;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				24390EFD555DD124430DFF9724065945 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				3544EFC33ADA0F657737DEB4208B6690 /* Pods */,
+				36232164F5C841F3E5C3ACB86812C02E /* Products */,
+				47A29EFAC181E15923665E50AFB572C6 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		EBC880584FE2DFF823BCC5863C234694 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				75B497488E3314801E4FB0C8009F9FDF /* CFNetwork.framework */,
+				12CD98D2E1967A971DD60249C2BD0616 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		681EBBFF6752519C07CFCDF7019EE9AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067733F3A7BCFBBCBE1A44A5BB25FB92 /* GYHttpClientHook.h in Headers */,
+				4D289B9C3F01794EEFCE9797B27A285F /* GYHttpMock.h in Headers */,
+				51A9C9A0CF9B3FC5121F06282E6C8394 /* GYMatcher.h in Headers */,
+				A0E35E6D68B6841537C8F870C84E463A /* GYMockRequest.h in Headers */,
+				C056EE21F4BA44F134E9D1ADC5B2FEBA /* GYMockRequestDSL.h in Headers */,
+				06D81E68CE4F1AC07DCD0322D7C29344 /* GYMockResponse.h in Headers */,
+				B0B3E5D1F8C43E5F0BFECF42E68F55C7 /* GYMockResponseDSL.h in Headers */,
+				28210BB724720D8A25805B8DB3D8AE3C /* GYMockURLProtocol.h in Headers */,
+				2A5B728C7AE99DDF8552B4AD692D6E0C /* GYNSURLConnectionHook.h in Headers */,
+				DC009D1C18AC750F6608EFC43AA3DDE5 /* GYNSURLSessionHook.h in Headers */,
+				AA193821213D5A23D8088CB5F52E3015 /* NSString+mock.h in Headers */,
+				C31E67D75D639C1CF7ADDC3E1467DCB3 /* NSURLRequest+GYURLRequestProtocol.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		809346F62053E0E50C9DF1A31CECA9B4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		8C4035B09D879248FB0F8FBA7149AB68 /* Pods-JJHTTPMockDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A185737AC3F97070AD4D8C14C531F68E /* Build configuration list for PBXNativeTarget "Pods-JJHTTPMockDemo" */;
+			buildPhases = (
+				809346F62053E0E50C9DF1A31CECA9B4 /* Headers */,
+				B5C4208918EA8F5ECBADEC94EEFFE97D /* Sources */,
+				014246A2D6E9842BC9C54D694BF13B0F /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7994BE06721A89BF232C27C721FFF900 /* PBXTargetDependency */,
+			);
+			name = "Pods-JJHTTPMockDemo";
+			productName = "Pods-JJHTTPMockDemo";
+			productReference = 2E01EEF76C924EBA0ADD6E3627CE2AF7 /* libPods-JJHTTPMockDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		8CDBE180929D957E7D2F3F0C95089EA6 /* GYHttpMock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B70BB614BB43D4011C8FEE9D3070845B /* Build configuration list for PBXNativeTarget "GYHttpMock" */;
+			buildPhases = (
+				681EBBFF6752519C07CFCDF7019EE9AE /* Headers */,
+				F89C3A3FA34536FE1936789AECAA956F /* Sources */,
+				F174053687FEA9CEF41179C207DC7D2B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GYHttpMock;
+			productName = GYHttpMock;
+			productReference = 8F877BAE9C02BB01C92FCA9B1845F11A /* libGYHttpMock.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 36232164F5C841F3E5C3ACB86812C02E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8CDBE180929D957E7D2F3F0C95089EA6 /* GYHttpMock */,
+				8C4035B09D879248FB0F8FBA7149AB68 /* Pods-JJHTTPMockDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B5C4208918EA8F5ECBADEC94EEFFE97D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE08626D9A6376C1CA06CCA6E55812DB /* Pods-JJHTTPMockDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F89C3A3FA34536FE1936789AECAA956F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E398125D1E9397389576C59EFD4E5570 /* GYHttpClientHook.m in Sources */,
+				6DBBBD662373BD44620E92356F0531C2 /* GYHttpMock-dummy.m in Sources */,
+				4CA39079CF0589FA93673AF1093A1863 /* GYHttpMock.m in Sources */,
+				293E57EE51E5C3B606636EC756677525 /* GYMatcher.m in Sources */,
+				2AA751B6557D08CEF3B821E3DB2C9F18 /* GYMockRequest.m in Sources */,
+				9E13569863A99A2A74CAF9999D196A8B /* GYMockRequestDSL.m in Sources */,
+				EAB29FD411725D958EF65346E3C21786 /* GYMockResponse.m in Sources */,
+				39ECC272D34CE57761252F5960CC6679 /* GYMockResponseDSL.m in Sources */,
+				71A12A5995451AE5189BEBC93CB13B03 /* GYMockURLProtocol.m in Sources */,
+				8518A4C98964C3E5FFC549D26A8E7177 /* GYNSURLConnectionHook.m in Sources */,
+				181CCEF543F05469DA9A821127AB6E65 /* GYNSURLSessionHook.m in Sources */,
+				C2B922F57736ECCA061610DA3B840CA9 /* NSString+mock.m in Sources */,
+				BEC23EB6AB96F2EDF5A1D2D72ADB0441 /* NSURLRequest+GYURLRequestProtocol.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7994BE06721A89BF232C27C721FFF900 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GYHttpMock;
+			target = 8CDBE180929D957E7D2F3F0C95089EA6 /* GYHttpMock */;
+			targetProxy = D86BBAA3AC2637BEA66321959E9896CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05216AA4494B5EBA549F0FF93DC24F51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F75FBFDD7658CB39B9F8E228287328D /* Pods-JJHTTPMockDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		068A219F9C384FD572D523EEE317D0C6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5EAC69657A07B961BA0471883CADC8D7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE23E6947AB673E4B84254566360266 /* GYHttpMock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GYHttpMock/GYHttpMock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GYHttpMock;
+				PRODUCT_NAME = GYHttpMock;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91B89CE342C8594FC80C269944293A9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5AE23E6947AB673E4B84254566360266 /* GYHttpMock.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/GYHttpMock/GYHttpMock-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = GYHttpMock;
+				PRODUCT_NAME = GYHttpMock;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBDFB92889F87A2B770FAB768CF5173F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793C968BB7753DE1F56E164D93E64707 /* Pods-JJHTTPMockDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E29B0B57C53FF8C9953CE2983686A7F9 /* Debug */,
+				068A219F9C384FD572D523EEE317D0C6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A185737AC3F97070AD4D8C14C531F68E /* Build configuration list for PBXNativeTarget "Pods-JJHTTPMockDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBDFB92889F87A2B770FAB768CF5173F /* Debug */,
+				05216AA4494B5EBA549F0FF93DC24F51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B70BB614BB43D4011C8FEE9D3070845B /* Build configuration list for PBXNativeTarget "GYHttpMock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91B89CE342C8594FC80C269944293A9D /* Debug */,
+				5EAC69657A07B961BA0471883CADC8D7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

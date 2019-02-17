@@ -1,0 +1,16 @@
+PODS:
+  - GYHttpMock (1.0.1)
+
+DEPENDENCIES:
+  - GYHttpMock
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - GYHttpMock
+
+SPEC CHECKSUMS:
+  GYHttpMock: ad08e55ce8bde4e7f7b4d0cbc79ff23c1311658b
+
+PODFILE CHECKSUM: 4dbc7c73d7a2d252daa5c57f0377641d8c8c701e
+
+COCOAPODS: 1.5.3
