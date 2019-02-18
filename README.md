@@ -41,3 +41,17 @@ Block 递归有两种实现方式，一种是声明 __weak 变量，另一种是
 Instruments Leaks 测到一个特殊 case，即当设置 keyboardType 为 UIKeyboardTypeNumberPad 时，UITextField dealloc 方法能够正常走到，但其内部的 UIKeyboardPredictionView 没有得到释放。实际上这是苹果的缓存策略，从 iOS 11.2 开始出现，无需处理。
 
 本 demo 就是用来验证这一点。
+
+
+
+## JJHTTPMockDemo
+
+本意是想测试一下 **GYHttpMock** 这个框架，并阅读一下源码，但是效果和自己预期的不一样，暂时放到这里。
+
+
+
+
+
+## JJLocalizationDemo
+
+本地化测试 demo，支持简体中文、繁体中文、英文、日文四种语言的文本和图片的本地化，还可以支持通过按钮切换 APP 的本地化语言环境，重启后生效。

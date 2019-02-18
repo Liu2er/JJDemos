@@ -1,0 +1,9 @@
+/* 
+  Localizable.strings
+  JJLocalizationDemo
+
+  Created by Liu on 2019/2/18.
+  Copyright © 2019年 Liu. All rights reserved.
+*/
+
+"点击" = "Switch language, Effective after restart";

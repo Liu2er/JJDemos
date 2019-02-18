@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  JJLocalizationDemo
+
+  Created by Liu on 2019/2/18.
+  Copyright © 2019年 Liu. All rights reserved.
+*/
+
+// Localization Demo 是 App 在英语环境环境下显示的名称
+CFBundleDisplayName = "Localization Demo";
