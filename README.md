@@ -54,7 +54,9 @@ Instruments Leaks 测到一个特殊 case，即当设置 keyboardType 为 UIKeyb
 
 ## JJLocalizationDemo
 
-本地化测试 demo，支持简体中文、繁体中文、英文、日文四种语言的文本和图片的本地化，还可以支持通过按钮切换 APP 的本地化语言环境，重启后生效。
+本地化测试 demo，支持简体中文、繁体中文、英文、日文四种语言的**文本**和**图片**的本地化，还可以支持通过按钮切换 APP 的本地化语言环境，重启后生效。
+
+<img src="./MDImages/JJLocalizationDemo 01.png" width="80%" />
 
 
 
