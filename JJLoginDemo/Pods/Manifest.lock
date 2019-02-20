@@ -1,0 +1,29 @@
+PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.40.0):
+    - Bolts (~> 1.9)
+  - FBSDKLoginKit (4.39.1):
+    - FBSDKCoreKit
+
+DEPENDENCIES:
+  - FBSDKLoginKit (= 4.39.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
+
+SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: ae214474b25033399c131dc81d258e412582a2ba
+  FBSDKLoginKit: c3079d9a4db27c492287b1eed7a4272b28cf8a59
+
+PODFILE CHECKSUM: b41b55315bf897cb6583169cd7bae3ffd96e2830
+
+COCOAPODS: 1.5.3
