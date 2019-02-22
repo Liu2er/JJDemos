@@ -67,3 +67,11 @@ Facebook 的第三方登录，先去 Facebook 开发网站注册一个账号，�
 注意：FBSDKLoginKit 的 4.39.0 版本有 bug；
 
 <img src="./MDImages/JJLoginDemo 01.gif" width="40%" />
+
+## JJGoogleSignInDemo
+
+根据 Google 的开发者官网 [Start integrating Google Sign-In into your iOS app](https://developers.google.cn/identity/sign-in/ios/start-integrating) 一步步完成的。关于 `CREATE AN OAUTH CLIENT ID` 和 `GET AN EXISTING OAUTH CLIENT ID` 这两步可以参考 Google AdWords 的 [OAuth2 身份验证](https://developers.google.com/adwords/api/docs/guides/authentication)。
+
+注意：Targets -> Info -> URL Types 里配置的 URL Schemes 是 Client ID 的反序，这里写错了会导致崩溃。
+
+<img src="./MDImages/JJGoogleSignInDemo 01.gif" width="40%" />
