@@ -56,6 +56,8 @@ Instruments Leaks 测到一个特殊 case，即当设置 keyboardType 为 UIKeyb
 
 本地化测试 demo，支持简体中文、繁体中文、英文、日文四种语言的**文本**和**图片**的本地化，还可以支持通过按钮切换 APP 的本地化语言环境，重启后生效。
 
+参考了自[3分钟实现iOS语言本地化/国际化（图文详解）](https://www.jianshu.com/p/88c1b65e3ddb)。
+
 <img src="./MDImages/JJLocalizationDemo 01.png" width="90%" />
 
 
@@ -66,7 +68,7 @@ Facebook 的第三方登录，先去 Facebook 开发网站注册一个账号，�
 
 注意：FBSDKLoginKit 的 4.39.0 版本有 bug；
 
-<img src="./MDImages/JJLoginDemo 01.gif" width="30%" />
+<img src="./MDImages/JJLoginDemo 01.gif" width="35%" />
 
 ## JJGoogleSignInDemo
 
@@ -74,4 +76,4 @@ Facebook 的第三方登录，先去 Facebook 开发网站注册一个账号，�
 
 注意：Targets -> Info -> URL Types 里配置的 URL Schemes 是 Client ID 的反序，这里写错了会导致崩溃。
 
-<img src="./MDImages/JJGoogleSignInDemo 01.gif" width="30%" />
+<img src="./MDImages/JJGoogleSignInDemo 01.gif" width="35%" />
