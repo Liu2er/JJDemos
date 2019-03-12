@@ -10,4 +10,8 @@
 
 @implementation DynamicLog
 
+- (void)d_log:(NSString *)string {
+    NSLog(@"d_log = %@", string);
+}
+
 @end

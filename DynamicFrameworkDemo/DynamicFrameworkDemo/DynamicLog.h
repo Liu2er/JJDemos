@@ -12,6 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface DynamicLog : NSObject
 
+- (void)d_log:(NSString *)string;
+
 @end
 
 NS_ASSUME_NONNULL_END

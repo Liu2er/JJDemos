@@ -8,12 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		58F5861A223787EF00CC696F /* DynamicFrameworkDemo.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F58618223787EF00CC696F /* DynamicFrameworkDemo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		58F586222237880300CC696F /* DynamicLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 58F586202237880300CC696F /* DynamicLog.h */; };
+		58F586232237880300CC696F /* DynamicLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 58F586212237880300CC696F /* DynamicLog.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		58F58615223787EF00CC696F /* DynamicFrameworkDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DynamicFrameworkDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58F58618223787EF00CC696F /* DynamicFrameworkDemo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicFrameworkDemo.h; sourceTree = "<group>"; };
 		58F58619223787EF00CC696F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58F586202237880300CC696F /* DynamicLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicLog.h; sourceTree = "<group>"; };
+		58F586212237880300CC696F /* DynamicLog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicLog.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +52,8 @@
 			children = (
 				58F58618223787EF00CC696F /* DynamicFrameworkDemo.h */,
 				58F58619223787EF00CC696F /* Info.plist */,
+				58F586202237880300CC696F /* DynamicLog.h */,
+				58F586212237880300CC696F /* DynamicLog.m */,
 			);
 			path = DynamicFrameworkDemo;
 			sourceTree = "<group>";
@@ -60,6 +66,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				58F5861A223787EF00CC696F /* DynamicFrameworkDemo.h in Headers */,
+				58F586222237880300CC696F /* DynamicLog.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +137,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58F586232237880300CC696F /* DynamicLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
