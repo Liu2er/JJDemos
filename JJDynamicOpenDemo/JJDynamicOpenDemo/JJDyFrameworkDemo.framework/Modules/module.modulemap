@@ -1,0 +1,6 @@
+framework module JJDyFrameworkDemo {
+  umbrella header "JJDyFrameworkDemo.h"
+
+  export *
+  module * { export * }
+}
