@@ -13,9 +13,11 @@
 		5835D3C2224A4E0600CA6085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5835D3C1224A4E0600CA6085 /* Assets.xcassets */; };
 		5835D3C5224A4E0600CA6085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5835D3C3224A4E0600CA6085 /* LaunchScreen.storyboard */; };
 		5835D3C8224A4E0600CA6085 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835D3C7224A4E0600CA6085 /* main.m */; };
+		A914AE545ABA167B84CEB94C /* libPods-JJIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4748CC4E959DFDD4751FD120 /* libPods-JJIGListKitDemo.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4748CC4E959DFDD4751FD120 /* libPods-JJIGListKitDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JJIGListKitDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5835D3B5224A4E0500CA6085 /* JJIGListKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JJIGListKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5835D3B8224A4E0500CA6085 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5835D3B9224A4E0500CA6085 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		5835D3C4224A4E0600CA6085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5835D3C6224A4E0600CA6085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5835D3C7224A4E0600CA6085 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B1BCF318657640C4A33D6A12 /* Pods-JJIGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJIGListKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJIGListKitDemo/Pods-JJIGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
+		EC64E012D2ECB205F3F52FBD /* Pods-JJIGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJIGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJIGListKitDemo/Pods-JJIGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A914AE545ABA167B84CEB94C /* libPods-JJIGListKitDemo.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		53F10350712AFA0725FBE83B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4748CC4E959DFDD4751FD120 /* libPods-JJIGListKitDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5835D3AC224A4E0500CA6085 = {
 			isa = PBXGroup;
 			children = (
 				5835D3B7224A4E0500CA6085 /* JJIGListKitDemo */,
 				5835D3B6224A4E0500CA6085 /* Products */,
+				A8B6EE8D6DD5B4671D210A9D /* Pods */,
+				53F10350712AFA0725FBE83B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +86,15 @@
 			path = JJIGListKitDemo;
 			sourceTree = "<group>";
 		};
+		A8B6EE8D6DD5B4671D210A9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC64E012D2ECB205F3F52FBD /* Pods-JJIGListKitDemo.debug.xcconfig */,
+				B1BCF318657640C4A33D6A12 /* Pods-JJIGListKitDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,6 +102,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5835D3CB224A4E0600CA6085 /* Build configuration list for PBXNativeTarget "JJIGListKitDemo" */;
 			buildPhases = (
+				F834BAC9FAF4B4B17616BBBB /* [CP] Check Pods Manifest.lock */,
 				5835D3B1224A4E0500CA6085 /* Sources */,
 				5835D3B2224A4E0500CA6085 /* Frameworks */,
 				5835D3B3224A4E0500CA6085 /* Resources */,
@@ -135,6 +160,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		F834BAC9FAF4B4B17616BBBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JJIGListKitDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5835D3B1224A4E0500CA6085 /* Sources */ = {
@@ -283,6 +333,7 @@
 		};
 		5835D3CC224A4E0600CA6085 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC64E012D2ECB205F3F52FBD /* Pods-JJIGListKitDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +351,7 @@
 		};
 		5835D3CD224A4E0600CA6085 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1BCF318657640C4A33D6A12 /* Pods-JJIGListKitDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
