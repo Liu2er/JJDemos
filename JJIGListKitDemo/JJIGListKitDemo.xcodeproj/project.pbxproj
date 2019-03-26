@@ -13,6 +13,8 @@
 		5835D3C2224A4E0600CA6085 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5835D3C1224A4E0600CA6085 /* Assets.xcassets */; };
 		5835D3C5224A4E0600CA6085 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5835D3C3224A4E0600CA6085 /* LaunchScreen.storyboard */; };
 		5835D3C8224A4E0600CA6085 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835D3C7224A4E0600CA6085 /* main.m */; };
+		5835D3D0224A523D00CA6085 /* SectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835D3CF224A523D00CA6085 /* SectionController.m */; };
+		5835D3D3224A53E800CA6085 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5835D3D2224A53E800CA6085 /* CollectionViewCell.m */; };
 		A914AE545ABA167B84CEB94C /* libPods-JJIGListKitDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4748CC4E959DFDD4751FD120 /* libPods-JJIGListKitDemo.a */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,10 @@
 		5835D3C4224A4E0600CA6085 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5835D3C6224A4E0600CA6085 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5835D3C7224A4E0600CA6085 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5835D3CE224A523D00CA6085 /* SectionController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SectionController.h; sourceTree = "<group>"; };
+		5835D3CF224A523D00CA6085 /* SectionController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SectionController.m; sourceTree = "<group>"; };
+		5835D3D1224A53E800CA6085 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
+		5835D3D2224A53E800CA6085 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		B1BCF318657640C4A33D6A12 /* Pods-JJIGListKitDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJIGListKitDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JJIGListKitDemo/Pods-JJIGListKitDemo.release.xcconfig"; sourceTree = "<group>"; };
 		EC64E012D2ECB205F3F52FBD /* Pods-JJIGListKitDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JJIGListKitDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JJIGListKitDemo/Pods-JJIGListKitDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +83,10 @@
 				5835D3B9224A4E0500CA6085 /* AppDelegate.m */,
 				5835D3BB224A4E0500CA6085 /* ViewController.h */,
 				5835D3BC224A4E0500CA6085 /* ViewController.m */,
+				5835D3CE224A523D00CA6085 /* SectionController.h */,
+				5835D3CF224A523D00CA6085 /* SectionController.m */,
+				5835D3D1224A53E800CA6085 /* CollectionViewCell.h */,
+				5835D3D2224A53E800CA6085 /* CollectionViewCell.m */,
 				5835D3BE224A4E0500CA6085 /* Main.storyboard */,
 				5835D3C1224A4E0600CA6085 /* Assets.xcassets */,
 				5835D3C3224A4E0600CA6085 /* LaunchScreen.storyboard */,
@@ -192,8 +202,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				5835D3BD224A4E0500CA6085 /* ViewController.m in Sources */,
+				5835D3D3224A53E800CA6085 /* CollectionViewCell.m in Sources */,
 				5835D3C8224A4E0600CA6085 /* main.m in Sources */,
 				5835D3BA224A4E0500CA6085 /* AppDelegate.m in Sources */,
+				5835D3D0224A523D00CA6085 /* SectionController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
