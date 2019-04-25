@@ -1,0 +1,1 @@
+protoc --objc_out=../JJProtobufDemo/ JJPerson.proto

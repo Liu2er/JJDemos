@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+message BasePerson {
+	string user_name = 1;
+}
+
+message Person {
+	string user_name = 1;
+	int32 user_age = 2;
+	string snippets = 3;
+	BasePerson basePersons = 8;
+	map<int32, string> projects = 4;
+	BasePerson base_person = 5;
+	enum Corpus {
+		UNIVERSAL = 0;
+		WEB = 1;
+		IMAGES = 2;
+		LOCAL = 3;
+		NEWS = 4;
+		PRODUCTS = 5;
+		VIDEO = 6;
+	}
+	Corpus corpus = 6;
+	bytes bytes_fields = 7;
+	bool test_bool = 9;
+}

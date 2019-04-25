@@ -77,3 +77,44 @@ Facebook 的第三方登录，先去 Facebook 开发网站注册一个账号，�
 注意：Targets -> Info -> URL Types 里配置的 URL Schemes 是 Client ID 的反序，这里写错了会导致崩溃。
 
 <img src="./MDImages/JJGoogleSignInDemo 01.gif" width="35%" />
+
+## JJProtobufDemo
+
+Protobuf 在 OC 中的简单使用。
+
+<img src="./MDImages/JJProtobufDemo 01.png"/>
+
+### 安装
+
+```shell
+brew install protobuf
+```
+
+
+
+### 使用
+
+1. 创建 .proto 文件；
+2. 执行命令：
+
+```shell
+protoc --objc_out=path/to/output_directory input_file.proto
+```
+
+3. 利用 CocoaPods 引入 Protobuf：
+
+```ruby
+pod  'Protobuf'
+```
+
+4. 设置 ARC：
+
+<img src="./MDImages/JJProtobufDemo 02.png"/>
+
+5. 可以直接修改文件的名字：
+
+```
+Jjperson.pbobjc.m  ->  JJPerson.m
+```
+
+6. 运行。
