@@ -36,11 +36,11 @@
             return self;
         };
         
-        _backgroundColor = ^ViewMaker *(UIColor *color) {
-            __strong typeof(self) self = weakSelf;
-            self.myBackgroundColor = color;
-            return self;
-        };
+//        _backgroundColor = ^ViewMaker *(UIColor *color) {
+//            __strong typeof(self) self = weakSelf;
+//            self.myBackgroundColor = color;
+//            return self;
+//        };
         
         _intoView = ^UIView * (UIView *superView) {
             __strong typeof(self) self = weakSelf;
@@ -56,6 +56,14 @@
 
 - (ViewMaker *)with {
     return self;
+}
+
+- (ColorBlock)backgroundColor {
+    ColorBlock myColor = ^ViewMaker *(UIColor *color) {
+        self.myBackgroundColor = color;
+        return self;
+    };
+    return myColor;
 }
 
 @end

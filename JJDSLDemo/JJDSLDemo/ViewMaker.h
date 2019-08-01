@@ -9,9 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
+@class ViewMaker;
+
 NS_ASSUME_NONNULL_BEGIN
 
 #define ViewAlloc(aClass) View_Alloc([aClass class])
+
+typedef ViewMaker * (^ColorBlock)(UIColor *color);
 
 @interface ViewMaker : NSObject
 
@@ -20,8 +24,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy) ViewMaker * (^postion)(CGFloat x, CGFloat y);
 @property (nonatomic, copy) ViewMaker * (^size)(CGFloat width, CGFloat height);
-@property (nonatomic, copy) ViewMaker * (^backgroundColor)(UIColor *color);
+//@property (nonatomic, copy) ViewMaker * (^backgroundColor)(UIColor *color);
 @property (nonatomic, copy) UIView * (^intoView)(UIView *superView);
+
+- (ViewMaker * (^)(UIColor *color))backgroundColor;
 
 ViewMaker * View_Alloc(Class aClass);
 

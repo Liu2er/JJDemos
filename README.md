@@ -118,3 +118,19 @@ Jjperson.pbobjc.m  ->  JJPerson.m
 ```
 
 6. 运行。
+
+
+
+
+
+## JJARFaceDistanceDemo
+
+这是一个利用 ARKit 检测面部到屏幕间距来达到护眼目的的 demo。
+
+1. 创建工程；
+2. 在 `Main.storyboard` 中设置控制器的 View 类型为 ARSCNView；
+3. 添加 ARKit 头文件、添加 ARKit 库和 `Main.storyboard` 拖拽创建 ARSCNView 类的 IBOutlet 属性；
+4. `Info.plist` 添加相机权限申请；
+5. 控制器里添加剩余代码；
+
+参考[ARKit框架详细解析（七）—— 使用AR Face Tracking和TrueDepth相机进行面部跟踪（一）](https://www.jianshu.com/p/3e77089cb620)
